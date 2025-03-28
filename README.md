@@ -8,7 +8,7 @@ Follow these steps to set up the project on your local machine:
 
 1️⃣ Clone the Repository
 ```sh
-git clone https://github.com/Mankirat364/my-react-project.git
+git clone https://git@github.com:Mankirat364/Assignment.git
 cd my-react-project
 ```
 2️⃣ Install Dependencies
