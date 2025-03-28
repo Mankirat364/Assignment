@@ -44,7 +44,7 @@ const UserCard = ({ firstName, lastName, avatar, email, id }) => {
       setTimeout(() => {
         toast.dismiss(); 
         setShowDeleteDialog(false);
-      }, 4000); // Ensure correct timeout syntax
+      }, 4000); 
     } catch (error) {
       console.error(error);
       toast.error(error.response?.data?.message || "Failed to delete user");
@@ -83,7 +83,6 @@ const UserCard = ({ firstName, lastName, avatar, email, id }) => {
         <p className="text-sm text-zinc-500 mt-4 tracking-wide">{userData.email}</p>
       </div>
 
-      {/* Edit User Modal */}
       {isEditing && (
         <div className="fixed inset-0 z-50 flex justify-center items-center bg-black/50 backdrop-blur-md">
           <div className="bg-gray-900 p-6 rounded-lg shadow-xl w-80 relative">
@@ -136,7 +135,6 @@ const UserCard = ({ firstName, lastName, avatar, email, id }) => {
         </div>
       )}
 
-      {/* Delete Confirmation Modal */}
       {showDeleteDialog && (
         <div className="fixed inset-0 z-50 flex justify-center items-center bg-black/50 backdrop-blur-md">
           <div className="bg-gray-900 p-6 rounded-lg shadow-xl w-80 relative">
